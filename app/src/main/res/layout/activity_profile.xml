@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_faded_orange"
+    android:theme="@style/Theme.WordBomb"
+    tools:context=".RegistrationFragment">
+
+    <TextView
+        android:id="@+id/profile_nickname_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nickname"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/profile_nickname_edit_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <EditText
+        android:id="@+id/profile_nickname_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="@string/username"
+        android:background="@drawable/rounded_rectangle_background_white"
+        app:layout_constraintBottom_toTopOf="@+id/game_settings_room_size_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_nickname_text" />
+
+    <TextView
+        android:id="@+id/game_settings_room_size_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        android:textSize="24sp"
+        android:paddingTop="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/profile_email_edit_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_nickname_edit_text" />
+
+    <EditText
+        android:id="@+id/profile_email_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/coming_soon_regular"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:text="@string/email"
+        android:background="@drawable/rounded_rectangle_background_white"
+        app:layout_constraintBottom_toTopOf="@+id/game_settings_hp_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/game_settings_room_size_text" />
+
+    <TextView
+        android:id="@+id/game_settings_hp_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/password"
+        android:textSize="24sp"
+        android:paddingTop="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/profile_password_edit_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_email_edit_text" />
+
+    <EditText
+        android:id="@+id/profile_password_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/enter_your_password"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:background="@drawable/rounded_rectangle_background_white"
+        app:layout_constraintBottom_toTopOf="@+id/profile_new_password_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/game_settings_hp_text" />
+
+    <TextView
+        android:id="@+id/profile_new_password_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_password"
+        android:textSize="24sp"
+        android:paddingTop="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/profile_new_password_edit_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_password_edit_text" />
+
+    <EditText
+        android:id="@+id/profile_new_password_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_rectangle_background_white"
+        android:ems="10"
+        android:hint="@string/enter_your_password"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/game_settings_start_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_new_password_text" />
+
+    <Button
+        android:id="@+id/game_settings_start_button"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rounded_rectangle_background_black"
+        android:text="@string/savechanges"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_new_password_edit_text" />
+</androidx.constraintlayout.widget.ConstraintLayout>

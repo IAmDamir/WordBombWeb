@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_rectangle_background_faded_light_orange"
+    android:theme="@style/Theme.WordBomb"
+    tools:context=".RegistrationFragment">
+
+    <TextView
+        android:id="@+id/game_settings_room_size_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:text="@string/room_size"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/room_size_edit_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <EditText
+        android:id="@+id/room_size_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_rectangle_background_white"
+        android:ems="10"
+        android:fontFamily="@font/coming_soon_regular"
+        android:importantForAutofill="no"
+        android:minHeight="48dp"
+        android:hint="@string/amount_of_players"
+        android:textColorHint="@color/black"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/game_settings_hp_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/game_settings_room_size_text"/>
+
+    <TextView
+        android:id="@+id/game_settings_hp_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:text="@string/amount_of_hp"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/amount_of_hp_edit_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/room_size_edit_text"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/amount_of_hp_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_rectangle_background_white"
+        android:ems="10"
+        android:fontFamily="@font/coming_soon_regular"
+        android:importantForAutofill="no"
+        android:minHeight="48dp"
+        android:hint="@string/hp"
+        android:textColorHint="@color/black"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/game_settings_start_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/game_settings_hp_text"
+        tools:ignore="LabelFor" />
+
+    <Button
+        android:id="@+id/game_settings_start_button"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rounded_rectangle_background_black"
+        android:text="@string/start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/amount_of_hp_edit_text" />
+</androidx.constraintlayout.widget.ConstraintLayout>
