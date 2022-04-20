@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<!--    tools:context=".MainActivity"-->
+
+    <ImageView
+
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="242dp"
+        app:srcCompat="@drawable/logo_adam"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" />
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/flexbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/roundcorner"
+        android:backgroundTint="@color/main_color_orange"
+        android:padding="10dp"
+        app:alignContent="space_around"
+        app:alignItems="center"
+        app:flexDirection="column"
+        app:justifyContent="center">
+
+
+        <TextView
+            android:id="@+id/inputText_game_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/coming_soon"
+            android:text="@string/game_id"
+            android:textColor="#FFFFFF"
+            android:textSize="23sp">
+
+        </TextView>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_game_id"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/roundcorner"
+            android:backgroundTint="@color/main_color_whitey"
+            app:placeholderTextColor="@color/black">
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/inputText_game_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/coming_soon"
+            android:text="@string/game_nickname"
+            android:textColor="#FFFFFF"
+            android:textSize="23sp">
+
+        </TextView>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_game_nickname"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/roundcorner"
+            android:backgroundTint="@color/main_color_whitey">
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/roundcorner"
+            android:backgroundTint="@color/black"
+            android:fontFamily="@font/coming_soon"
+            android:text="Join"
+            android:textColor="@color/main_color_whitey"
+            android:textSize="15sp">
+
+        </Button>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/coming_soon"
+            android:text="or"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/roundcorner"
+            android:backgroundTint="@color/black"
+            android:fontFamily="@font/coming_soon"
+            android:text="Login"
+            android:textColor="@color/main_color_whitey"
+            android:textSize="15sp">
+
+        </Button>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/roundcorner"
+            android:backgroundTint="@color/black"
+            android:fontFamily="@font/coming_soon"
+            android:text="Register"
+            android:textColor="@color/main_color_whitey"
+            android:textSize="15sp">
+
+        </Button>
+
+
+    </com.google.android.flexbox.FlexboxLayout>
+
+
+</LinearLayout>

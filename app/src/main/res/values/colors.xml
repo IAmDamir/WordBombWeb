@@ -7,4 +7,7 @@
     <color name="dark_faded_orange">#D8774A</color>
     <color name="orange">#AF4418</color>
     <color name="dark_orange">#570C00</color>
+    <color name="main_color_orange">#FD9352</color>
+    <color name="main_color_darker_orange">#FE5E32</color>
+    <color name="main_color_whitey">#F7F6FB</color>
 </resources>

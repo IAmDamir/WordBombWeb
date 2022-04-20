@@ -28,6 +28,17 @@
         <entry key="..\:/Users/Damir/AndroidStudioProjects/WordBomb/app/src/main/res/layout/nav_header_profile.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Damir/AndroidStudioProjects/WordBomb/app/src/main/res/layout/nav_header_profile_drawer.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Damir/AndroidStudioProjects/WordBomb/app/src/main/res/menu/activity_main_drawer.xml" value="0.25416666666666665" />
+        <entry key="app/src/main/res/drawable/roundcorner.xml" value="0.1" />
+        <entry key="app/src/main/res/layout-land/activity_profile_drawer.xml" value="0.196875" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.17119565217391305" />
+        <entry key="app/src/main/res/layout/activity_profile.xml" value="0.2703091165293819" />
+        <entry key="app/src/main/res/layout/activity_profile_drawer.xml" value="0.17119565217391305" />
+        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.17119565217391305" />
+        <entry key="app/src/main/res/layout/fragment_registration.xml" value="0.17119565217391305" />
+        <entry key="app/src/main/res/layout/fragment_settings.xml" value="0.17119565217391305" />
+        <entry key="app/src/main/res/layout/gamepage.xml" value="0.16817932128906246" />
+        <entry key="app/src/main/res/layout/mainpage.xml" value="0.21443786621093752" />
+        <entry key="app/src/main/res/layout/nav_header_profile_drawer.xml" value="0.17119565217391305" />
       </map>
     </option>
   </component>
