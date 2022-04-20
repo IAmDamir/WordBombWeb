@@ -560,6 +560,7 @@
         android:textAlignment="center"
         android:fontFamily="@font/coming_soon"
         android:textSize="15sp"
+        android:textColor="@color/black"
         >
 
     </TextView>
